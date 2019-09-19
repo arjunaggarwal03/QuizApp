@@ -6,49 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Who is this?"
-        android:typeface="monospace"
+        android:text="Choose Kanye!"
         android:textColor="@color/colorPrimary"
         android:textSize="40dp"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.847" />
 
-    <EditText
-        android:id="@+id/textEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Name the artist here"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image1" />
-
-
-    <ImageView
-        android:id="@+id/image1"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
+    <ImageButton
+        android:id="@+id/kanye"
+        android:layout_width="341dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/yeezy"
-        app:layout_constraintBottom_toTopOf="@id/textEdit"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textBox"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter"
-        app:layout_constraintTop_toBottomOf="@id/textEdit"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintRight_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/foxx"
+        android:layout_width="338dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="256dp"
+        android:src="@drawable/jamiefoxx"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
